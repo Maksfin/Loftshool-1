@@ -72,7 +72,7 @@ body{
 }
 /*-- ШАПКА --*/
 .header{
-	background: #eff3f7  url(../img/border.png)center bottom no-repeat;
+	background: url(../img/border.png) center bottom no-repeat #eff3f7;
   margin-bottom: 40px;
   height: 119px;
   min-width: 980px;
@@ -117,13 +117,19 @@ body{
 	background: url(../img/sprite.png) no-repeat;
 	height: 100%;
 	width: 100%;
+	-webkit-transition: .3s ease-in;
+	-moz-transition: .3s ease-in;
+	-ms-transition: .3s ease-in;
+	-o-transition: .3s ease-in;
+	transition:  .3s ease-in;
 	text-indent: -999999px;
 }
 .vk{background-position-x:0;}
 .tw{background-position-x:-71px;}
 .fb{background-position-x: -142px;}
 .git{background-position-x: -213px;}
-.social__link:hover{background-position-y:-86px;}
+.social__link:hover{
+	background-position-y:-86px;}
 
  /*-- Навигация --*/
 .sidebar {
@@ -307,7 +313,7 @@ body{
 }
 .about-me-info-list__value{
 	float: left;
-	width: 225px;
+	max-width: 225px;
 	margin-left: 18px;
 	font-size: 0.9em;
 }
@@ -323,8 +329,9 @@ body{
   padding: 0 14px;
   margin: 0 2px 5px 0;
   border-radius: 2px;
+  line-height: 19px;
   /* ie-8 градиент */
-  filter: progid:DXImageTransform.Microsoft.gradient
+   filter: progid:DXImageTransform.Microsoft.gradient
   ( startColorstr='#3ba8c0', endColorstr='#2e8ca2', GradientType=0 );
   }
 .about-me-where{
@@ -387,7 +394,7 @@ body{
 	line-height: 80px;
 	margin-top: -80px;
 	min-width: 980px;
-	background:url(../img/border.png)center top no-repeat #eff3f7; 
+	background: url(../img/border.png) center top no-repeat #eff3f7; 
 }
  .page-footer__copyright{
 	width: 800px;
