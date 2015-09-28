@@ -1,35 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Главаная страница</title>
-		<!--SEO -->
-		<meta name="description" content="Loftschool первый выпусной проект">
-		<meta name="keywords" content="Loftschool, homework, выпускной проект №1">
-		<meta name="author" content="Максим Рощин">
-		<!-- favicon.ico -->
-		<link rel="shortcut icon" href="" type="image/x-icon">
-		<link rel="icon" href="" type="image/x-icon">
-		<!-- Bower CSS -->
-		<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/about-me.css">
-		<!-- Modernizr -->
-		<script src="bower/modernizer/modernizr.js"></script>
- </head>
- <body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Главаная страница</title>
+	<!--SEO -->
+	<meta name="description" content="Loftschool первый выпусной проект">
+	<meta name="keywords" content="Loftschool, homework, выпускной проект №1">
+	<meta name="author" content="Максим Рощин">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Bower CSS -->
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<!-- CSS -->
+ 	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="css/about-me.css">
+	<!-- Modernizr -->
+	<script src="bower/modernizer/modernizr.js"></script>
+</head>
+<body>
  		<!--[if lt IE 8]>
  			<p class="browsehappy">Ваш браузер <strong>устарел</strong>.Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
- 		<![endif]-->
-12
-		<!-- Ваша верстка тут -->
+ 			<![endif]-->
+	<div class="wrapper">
+		<header class="header">
+ 					<div class="header-wrap">
+ 						<a href="index.html" title="На главную" class="header__logo">
+ 							<img  src="img/logo.png" alt="LoftSchool">
+ 							<span class="hidden-text">Cайт портфолио</span>
+ 						</a>	
+ 						<ul class="social">
+ 							<li class="social__item">
+ 								<a href="https://vk.com/id8079066" target="_blank" class="social__link vk">vk.com</a>
+ 							</li>
+ 							<li class="social__item">
+ 								<a href="#" target="_blank" class="social__link tw">twitter.com</a>
+ 							</li>
+ 							<li class="social__item">
+ 								<a href="#" target="_blank" class="social__link fb">facebook.com</a>
+ 							</li>
+ 							<li class="social__item">
+ 								<a href="https://github.com/Maksfin" target="_blank" class="social__link git">github.com</a>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</header>
+ 				<!-- END -->
+		<div class="main-container clearfix">
+				<aside class="sidebar">
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="nav-list__item"><a class="nav-list__link active" href="#">Обо мне</a></li>
+							<li class="nav-list__item"><a class="nav-list__link" href="#">Мои работы</a></li>
+							<li class="nav-list__item"><a class="nav-list__link" href="#">Связаться со мной</a></li>
+						</ul>
+					</nav>
+				<section>
+					<ul class="contacts">
+						<li class="contacts__item contacts__title">Контакты</li>
+						<li class="contacts__item contacts__email"><a class="contacts__link" href="mailto:dyrnoj@bk.ru">dyrnoj@bk.ru</a></li>
+						<li class="contacts__item contacts__phone"><a class="contacts__link" href="tel:79611429537">+79611429537</a></li>
+						<li class="contacts__item contacts__skype"><a class="contacts__link" href="skype:maksfinn">maksfinn</a></li>
+					</ul>
+				</section>
+				</aside>
+				<section class="about-me">
+					<h2 class="about-me__title">Основная информация</h2>
+					<div class="about-me-body clearfix">
+						<div class="about-me-img">
+							<div class="about-me__img-box">
+								<img class="about-me__img-inner"src="img/avatar.jpg" alt="Фотография">
+							</div>
+						</div>
+						<div class="about-me-info">
+							<ul class="about-me-info-list">
+								<li class="about-me-info-list__item clearfix">
+									<div class="about-me-info-list__name">Меня зовут:</div>
+									<div class="about-me-info-list__value">Рощин Максим Вячеславович</div>
+								</li>
+								<li class="about-me-info-list__item clearfix">
+									<div class="about-me-info-list__name">Мой возраст:</div>
+									<div class="about-me-info-list__value">23 года</div>
+								</li>
+								<li class="about-me-info-list__item clearfix">
+									<div class="about-me-info-list__name">Мой город:</div>
+									<div class="about-me-info-list__value">Кимры, Россия</div>
+								</li>
+								<li class="about-me-info-list__item clearfix">
+									<div class="about-me-info-list__name">Моя специализация:</div>
+									<div class="about-me-info-list__value">FRONTEND разработчик</div>
+								</li>
+								<li class="about-me-info-list__item clearfix">
+									<div class="about-me-info-list__name">Ключевые навыки:</div>
+									<div class="about-me-info-list__value">
+										<ul class="about-me-info-icon">
+											<li class="about-me-info-icon__item">html</li>
+											<li class="about-me-info-icon__item">CSS</li>
+											<li class="about-me-info-icon__item">javascript</li>
+											<li class="about-me-info-icon__item">gulp</li>
+											<li class="about-me-info-icon__item">git</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="about-me">
+					<h2 class="about-me__title">Опыт работы</h2>
+					<ul class="about-me-where">
+						<li class="about-me-where__item">
+							<div class="about-me-where__title">ОАО "Мебельная фабрика ЭкоМебель"</div>
+							<div class="about-me-where__position">Сборщик мебели</div>
+						</li>
+						<li class="about-me-where__item">
+							<div class="about-me-where__title">ОАО "Воля"</div>
+							<div class="about-me-where__position">Сборщик металлоконструкций</div>
+						</li>
+					</ul>
+				</section>
+				<section class="about-me">
+					<h2 class="about-me__title">Образование</h2>
+					<ul class="about-me-where">
+						<li class="about-me-where__item learn">
+							<div class="about-me-where__title">Специалист (Автоматизация вычислительных систем). СПЕК </div>
+							<div class="about-me-where__position">Сентябрь 2009 - Июль 2012</div>
+						</li>
+						<li class="about-me-where__item learn">
+							<div class="about-me-where__title">Студент(Бакалавр) (Бизнес-информатика). МУПОЧ</div>
+							<div class="about-me-where__position">Сентябрь 2013 - по настоящее время</div>
+						</li>
+						<li class="about-me-where__item course">
+							<div class="about-me-where__title">Курсы Loftshool.ru</div>
+							<div class="about-me-where__position">Сентябрь 2015 - по настоящее время</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="page-footer__copyright">
+				<div class="page-footer__text">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+				<div class="page-footer__container-lock">
+					<a href="" class="page-footer__lock">Выполнить вход</a>
+				</div>
+			</div>
 
-		<!-- JS -->
-		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+		</div>
+	</footer>
+</body>
 </html>
- 
