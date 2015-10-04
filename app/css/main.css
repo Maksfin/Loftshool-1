@@ -8,6 +8,15 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'firasans-regular';
+    src: url('../fonts/fira/firasans-regular.eot');
+    src: url('../fonts/fira/firasans-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fira/firasans-regular.woff') format('woff'),
+        url('../fonts/fira/firasans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
 	font-family: 'firasans-light';
 	src: url('../fonts/fira/firasans-light.eot');
 	src: url('../fonts/fira/firasans-light.eot?#iefix') format('embedded-opentype'),
@@ -34,6 +43,15 @@
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+    font-family: 'firasans-lightitalic';
+    src: url('../fonts/fira/firasans-lightitalic.eot');
+    src: url('../fonts/fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fira/firasans-lightitalic.woff') format('woff'),
+         url('../fonts/fira/firasans-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  
 html{
 	height: 100%;
 }
@@ -180,7 +198,7 @@ body{
   border-bottom: none;
   font-size: 1.4em;
   padding: 24px 32px;
-  margin:0 -13px -2px;
+  margin:-2px -13px -2px;
 }
 .active:hover {
   color: #fff;
@@ -258,139 +276,6 @@ body{
 	top:10px;
 	left: 42px;
 	background: url(../img/skype.png) no-repeat;
-}
-/*-- Контент --*/
-.about-me{
-	float: right;
-	width: 650px;
-	border-radius: 4px;
-	overflow: hidden;
-	padding-bottom: 35px;
-	margin-bottom: 27px;
-	background-color: #eff3f7;
-}
-.about-me__title{
-	display: inline-block;
-	font-size: 1.7em;
-	color: #3ba8c0;
-  line-height: 66px;
-  border-bottom: 2px solid #3ba8c0;
-  margin-top: 0;
-  margin-bottom: 21px;
-  padding: 0 21px;
-}
-.last-teach{
-	padding-bottom: 12px;
-}
-.last{
-	margin-bottom: 40px;
-}
-.about-me-img{
-	float: left;
-	margin-left: 55px;
-	margin-top: 15px;
-}
-.about-me__img-box{
-	width: 150px;
-	height: 150px;
-	box-sizing:border-box;
-	overflow: hidden;
-	border: 5px solid #3ba8c0;
-	border-radius: 50%;
-}
-.about-me__img-inner{
-	width: 100%;
-}
-.about-me-info-list{
-	margin:0 10px 0 0;
-	padding: 0;
-}
-.about-me-info-list__item{
-	margin-bottom: 10px;
-	list-style: none;
-	width: 410px;
-	float: right;
-	color: #37424d;
-}
-.about-me-info-list__name{
-	float: left;
-	font-family: 'fira_sansmedium';
-	font-size: 1.06em;
-}
-.about-me-info-list__value{
-	float: left;
-	max-width: 225px;
-	margin-left: 18px;
-	font-size: 0.9em;
-}
-.about-me-info-icon{
-	padding: 0;
-}
-.about-me-info-icon__item{
-  color: #fff;
-  display: inline-block;
-  background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
-  font-size: 0.8em;
-  font-family: 'proxima_novasemibold';
-  padding: 0 14px;
-  margin: 5px 2px 5px 0;
-  border-radius: 2px;
-  line-height: 19px;
-  /* ie-8 градиент */
-   filter: progid:DXImageTransform.Microsoft.gradient
-  ( startColorstr='#3ba8c0', endColorstr='#2e8ca2', GradientType=0 );
-  }
-.about-me-where{
-  margin: 0;
-  padding-left: 52px;
- }
-.about-me-where__item{
-	list-style: none;
-	position: relative;
-  padding-left: 72px;
-  margin-top: 22px;
-} 
-.about-me-where__item:before{
-	content: '';
-	display: block;
-	position: absolute;
-	left: 10px;
-	top:4px;
-	width: 38px;
-	height: 42px;
-	background: url(../img/раб.png) no-repeat;
-}
-.learn:before{
-	content: '';
-	display: block;
-	position: absolute;
-	left: 9px;
-	top:7px;
-	width: 43px;
-	height: 26px;
-	background: url(../img/уч.png) no-repeat;
-}
-.course:before{
-	content: '';
-	display: block;
-	position: absolute;
-	left: 19px;
-	top:5px;
-	width: 26px;
-	height: 33px;
-	background: url(../img/курс.png) no-repeat;
-}
-.about-me-where__item:first-child{
-	margin-top: 0;
-}
-.about-me-where__title{
-  color: #4a545d;
-  font-size: 1.06em;
-  }
-.about-me-where__position{
-  color: #4a545d;
-  font-size: 0.9em;
-  line-height: 15px;
 }
 
 /*--- Футер ---*/
