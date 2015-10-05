@@ -1,5 +1,4 @@
-
-.contact__wrap-inner{
+.contact__wrap{
 	width: 400px;
 	margin:0 auto;
 }
@@ -22,12 +21,12 @@
  } 
 .cotact__text{
 	display: block;
-  font-family: 'fira_sansthin';
+ 	font-family: 'firasans-light';
   font-size: 1.2em;
   color: #848894;
 }
 .ml{
-	margin-left: 10px;
+	margin-left: 15px;
 }
 .contact__input{
 	border: 1px solid #48cbe8;
@@ -41,7 +40,54 @@
   width: 190px;
 }
 .contact__input-textarea{
- 	width: 395px;
+ 	width: 400px;
   height: 180px;
   resize:none;
+}
+.contact__capcha-img{
+ 	width: 190px;
+  height: 80px;
+  border: 1px solid #48cbe8;
+  border-radius: 4px;
+  background: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contact__input--capcha{
+	vertical-align: top;
+  margin: 20px 0 0 10px;
+  width: 190px;
+  height: 30px;
+  padding: 5px 10px;
+}
+.contact__button{
+  font-size: 1.1em;
+  border-radius: 5px;
+  padding: 3px 25px;
+  color: #fff;
+  border: none;
+}
+.contact__button--submit{
+	background: #48cbe8;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 0 #3ba8c0;
+}
+.contact__button--reset{
+  background: #849db5;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 0 #687b8f;
+}
+.contact__button--submit:hover,
+.contact__button--reset:hover{
+	-webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 2px 0 -2px;
+  box-shadow: none;
 }
