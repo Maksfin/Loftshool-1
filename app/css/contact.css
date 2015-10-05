@@ -1,0 +1,47 @@
+
+.contact__wrap-inner{
+	width: 400px;
+	margin:0 auto;
+}
+.contact__title{
+		margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 120px;
+    color: #fff;
+    background: #48cbe8;
+    border-bottom: 20px solid #67dffa;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+.contact__input-wrap{
+ 	  display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+ } 
+.cotact__text{
+	display: block;
+  font-family: 'fira_sansthin';
+  font-size: 1.2em;
+  color: #848894;
+}
+.ml{
+	margin-left: 10px;
+}
+.contact__input{
+	border: 1px solid #48cbe8;
+  border-radius: 4px;
+  color: #48cbe8;
+  padding: 10px;
+  box-sizing:border-box;
+}
+.contact__input--area{
+	height: 40px;
+  width: 190px;
+}
+.contact__input-textarea{
+ 	width: 395px;
+  height: 180px;
+  resize:none;
+}

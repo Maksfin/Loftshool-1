@@ -181,7 +181,7 @@ body{
   text-decoration: none;
   font-size: 1.3em;
   color: #959aa8;
-  padding: 23px 10px;
+  padding: 23px 5px;
   margin: 0 10px;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -197,7 +197,7 @@ body{
   color: #fff;
   border-bottom: none;
   font-size: 1.4em;
-  padding: 24px 32px;
+  padding: 24px 27px;
   margin:-2px -13px -2px;
 }
 .active:hover {
@@ -211,6 +211,25 @@ body{
 	border-radius: 4px;
 	overflow: hidden;
 	margin-bottom: 40px;
+}
+.about-me {
+    float: right;
+    width: 650px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 35px;
+    margin-bottom: 27px;
+    background-color: #eff3f7;
+}
+.about-me__title {
+    display: inline-block;
+    font-size: 1.7em;
+    color: #3ba8c0;
+    line-height: 66px;
+    border-bottom: 2px solid #3ba8c0;
+    margin-top: 0;
+    margin-bottom: 21px;
+    padding: 0 21px;
 }
 .contacts__item{
 	display: block;
