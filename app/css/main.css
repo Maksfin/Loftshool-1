@@ -337,3 +337,9 @@ body{
 .page-footer__lock:hover{
 	background: url(../img/вход-выполнен.png) no-repeat;
 }
+
+/*-- Стилизация Placeholder --*/
+input::-webkit-input-placeholder { color: #48cbe8;}
+input::-moz-placeholder { color: #48cbe8;}
+textarea::-moz-placeholder { color: #48cbe8;}
+textarea::-webkit-input-placeholder { color: #48cbe8;}

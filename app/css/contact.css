@@ -66,6 +66,7 @@
   padding: 3px 25px;
   color: #fff;
   border: none;
+  outline: none;
 }
 .contact__button--submit{
 	background: #48cbe8;

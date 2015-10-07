@@ -246,11 +246,6 @@
   box-sizing:border-box;
   text-decoration: none;
 }
-input::-webkit-input-placeholder { color: #48cbe8;}
-input::-moz-placeholder { color: #48cbe8;}
-textarea::-moz-placeholder { color: #48cbe8;}
-textarea::-webkit-input-placeholder { color: #48cbe8;}
-
 .close {
   border-radius: 50%;
   background-color: rgb( 255, 255, 255 );
