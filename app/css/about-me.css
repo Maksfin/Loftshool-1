@@ -42,12 +42,12 @@
 .about-me-info-list{
 	margin:0 10px 0 0;
 	padding: 0;
+	width: 410px;
+	float: right;
+	list-style: none;
 }
 .about-me-info-list__item{
 	margin-bottom: 10px;
-	list-style: none;
-	width: 410px;
-	float: right;
 	color: #37424d;
 }
 .about-me-info-list__name{
@@ -68,6 +68,9 @@
   color: #fff;
   display: inline-block;
   background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 50%);
+  background: -moz-linear-gradient(top,#3ba8c0 50%,#2e8ca2 50%);
+  background: -o-linear-gradient(top,#3ba8c0 50%,#2e8ca2 50%);
+  background: -ms-linear-gradient(top,#3ba8c0 50%,#2e8ca2 50%);
   font-size: 0.8em;
   font-family: 'proxima_novasemibold';
   padding: 0 14px;

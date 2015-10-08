@@ -11,7 +11,6 @@
   padding-bottom: 81px;
 }
 .auth-wrap{
-	width: 95%;
   max-width: 590px;
   margin: 20px auto;
   border-radius: 3px;
@@ -23,8 +22,10 @@
 	background-color: #48cbe8;
   border-bottom: 15px solid #67dffa;
   color: #fff;
+  height: 91px;
+  line-height: 42px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 .auth__title{
 	margin: 0;
@@ -33,16 +34,16 @@
 }
 .auth__form{
 	margin: auto;
-  width: 71.8%;
   max-width: 422px;
   text-align: center;
 }
 .auth__form-data{
-	margin-bottom: 21px;
+	margin-bottom: 27px;
+  text-align: center;
+  line-height: 1;
 }
 .auth__form-label{
-	font-size: 36px;
-  font-weight: 300;
+	font-size: 2.25em;
   color: #959aa8;
 }
 .auth__form-field{
@@ -53,23 +54,30 @@
 	border: 1px solid #48cbe8;
   border-radius: 4px;
   color: #48cbe8;
-  width: 420px;
+  width: 100%;
+  box-sizing:border-box;
   height: 60px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
-.auth__form-data{
-	text-align: center;
+.submit{
+	margin-top: 25px;
 }
 .auth__form-submit{
   font-size: 2.1em;
   border-radius: 7px;
-  padding: 3px 65px 0;
-  margin: 10px 0 20px 0;
+  padding: 0 65px;
   color: #fff;
   border: none;
   background: #48cbe8;
   box-shadow: 0 4px 0 #3ba8c0;
 }
 .auth__form-submit:hover{
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  
   box-shadow: none;
+  margin: 4px 0 -4px;
 }
