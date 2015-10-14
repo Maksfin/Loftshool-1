@@ -219,6 +219,7 @@
   border-radius: 5px;
   background: #48cbe8;
   border: none;
+  outline: none;
   box-shadow: 0 2px 0 #3ba8c0;
   color: #fff;
   font-size: 1.2em;
@@ -232,7 +233,10 @@
 	margin: 2px auto -2px;
 	box-shadow: none;
 }
-.popup__close{
+.form__submit:active{
+	background: #3ba8c0;
+}
+.b-close{
 	position: absolute;
 	width: 25px;
   height: 25px;
@@ -246,13 +250,4 @@
   box-sizing:border-box;
   text-decoration: none;
 }
-.close {
-  border-radius: 50%;
-  background-color: rgb( 255, 255, 255 );
-  position: absolute;
-  left: 844px;
-  top: 325px;
-  width: 25px;
-  height: 25px;
-  z-index: 155;
-}
+

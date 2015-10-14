@@ -82,8 +82,7 @@
   overflow: hidden;
   box-shadow: 0 2px 0 #687b8f;
 }
-.contact__button--submit:hover,
-.contact__button--reset:hover{
+.contact__button:hover{
 	-webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
@@ -91,4 +90,7 @@
   transition: 0.3s ease;
   margin: 2px 0 -2px;
   box-shadow: none;
+}
+.contact__button:active{
+  background: #3ba8c0;
 }
