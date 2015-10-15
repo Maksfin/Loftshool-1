@@ -13,6 +13,7 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<!-- Bower CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css"> 
 	<link rel="stylesheet" href="css/my-works.css">
@@ -132,12 +133,12 @@
  			<div class="popup">
  				<h3 class="popup__title">Добавление проекта</h3>
  				<div class="popup__inner">
- 					<form action="#" class="form">
+ 					<form  class="form">
  						<label class="form__label">
  							<div class="form__title">
  								Название проекта
  							</div>
- 							<input type="text" name="name" class="form__input" placeholder="Введите название">
+ 							<input type="text" name="name" qtip-content="Вы не ввели название" class="form__input" placeholder="Введите название">
  						</label>
  						<label class="form__label">
  							<div class="form__title">
@@ -145,7 +146,7 @@
  							</div>
  							<div class="form__input form__input-file">
  								<input type="file" name="input-file" class="form__input-file-origin">
- 								<div class="form__input-fake"></div>
+ 								<div class="form__input-fake" qtip-content="Вы не выбрали изображение"></div>
  								<div class="form__input-file-icon"></div>
  							</div>
  						</label>
@@ -153,13 +154,13 @@
  							<div class="form__title">
  								URL проекта
  							</div>
- 							<input type="text" name="input-url" class="form__input" placeholder="Добавьте ссылку">									
+ 							<input type="text" name="input-url" qtip-content="Вы не добавили ссылку" class="form__input" placeholder="Добавьте ссылку">									
  						</label>
  						<label class="form__label">
  							<div class="form__title">
  								Описание
  							</div>
- 							<textarea name="textarea" class="form__input form__textarea" placeholder="Пара слов о вашем проекте"></textarea>							
+ 							<textarea name="textarea" qtip-content="Описание проекта обязательно" class="form__input form__textarea" placeholder="Пара слов о вашем проекте"></textarea>							
  						</label>
  						<div class="form__submit-wrap">
  							<input type="submit" class="form__submit" value="Добавить">
@@ -171,6 +172,9 @@
  			<script src="bower/jquery/jquery.min.js"></script>
  			<script src="bower/bPopup/jquery.bpopup.min.js"></script>
  			<script src="bower/jquery.easing/js/jquery.easing.min.js"></script>
+ 			<script src="bower/qtip2/jquery.qtip.js"></script>
+ 			<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
+ 			<script src="js/validation.js"></script>
  			<script src="js/add_project.js"></script>
  		</body>
  		</html>

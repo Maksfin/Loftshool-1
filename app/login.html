@@ -13,6 +13,7 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<!-- Bower CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
  	<link rel="stylesheet" href="css/main.css"> 
  	<link rel="stylesheet" href="css/login.css">
@@ -30,17 +31,17 @@
 			<h2 class="auth__title">Авторизируйтесь</h2>
 		</div>
 		<div class="auth__form">
-			<form action="" class="form" method="post">
+			<form  class="form">
 				<div class="auth__form-data">
 					<label class="auth__form-label">Логин</label>
 					<div class="auth__form-field">
-						<input  name="" class="auth__form-input" type="text" placeholder="Введите логин">
+						<input  name="name" qtip-content="Введите логин" class="auth__form-input" type="text" placeholder="Введите логин">
 					</div>
 				</div>
 				<div class="auth__form-data">
 					<label class="auth__form-label">Пароль</label>
 					<div class="auth__form-field">
-						<input  name="" class="auth__form-input" type="text" placeholder="Введите пароль">
+						<input  name="pass" qtip-content="Введите пароль" class="auth__form-input" type="text" placeholder="Введите пароль">
 					</div>
 				</div>
 				<div class="auth__form-data submit">
@@ -61,5 +62,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="bower/jquery/jquery.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/login.js"></script>
 	</body>
 	</html>
