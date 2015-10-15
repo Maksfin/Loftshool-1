@@ -25,7 +25,6 @@ var moduleContact = (function() {
 			if (!moduleValidation.validateForm(form)) return false;
 		};
 
-	
 	// публичные св-ва и методы
 	return {
 		init : init
