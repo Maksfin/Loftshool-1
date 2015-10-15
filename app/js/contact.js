@@ -20,6 +20,7 @@ var moduleContact = (function() {
 					defObj = _ajaxForm(form, url);
 					//  в defObj будет приходить ответ от сервера
 	},
+	
 			// универсальная функция Ajax
 		_ajaxForm = function(form, url) {
 			if (!moduleValidation.validateForm(form)) return false;
