@@ -17,7 +17,7 @@ var moduleValidation = (function () {
 
 	_clearForm = function (form) {
 		var form = $(this);
-		form.find('input, textarea, .form__input-fake').trigger('hideTooltip');
+		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.error').removeClass('error');		
 	},
 
@@ -57,7 +57,7 @@ var moduleValidation = (function () {
 
   validateForm = function(form) {
 
-		var elements = form.find('input, textarea, .form__input-fake').not('input[type="file"]'),
+		var elements = form.find('input, textarea').not('input[type="file"]'),
 				valid = true;
 		    $.each(elements, function (index, val){
 			  var element = $(val),

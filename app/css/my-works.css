@@ -177,11 +177,13 @@
 	overflow: hidden;
 }
 .form__input-file{
-	line-height: 41px;
-	height: 21px;
+	height: 40px;
 	position: relative;
 	cursor: pointer;
-	background: #fff;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-size: 0.8em;
+	overflow: hidden;
 }
 .form__input-file-origin {
   position: absolute;
@@ -192,17 +194,18 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  border:1px solid #48cbe8;
+  border-radius: 4px;
+  width: 261px;
   left: 0px;
   padding-left: 10px;
-  right: 52px;
 }
 .form__input-file-icon {
   position: absolute;
   right: 0;
   bottom: 0;
   top: 0;
-  left: 268px;
-  overflow: hidden;
+  left: 270px;
   background: url("../img/input-file.png") center center no-repeat; 
 }
 .form__textarea{

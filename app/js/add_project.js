@@ -13,11 +13,10 @@ var modulePopup = (function() {
 	// модальное окно 
 	_showModal = function (e) {
 		e.preventDefault();
-		$('.form__input-fake').text('Загрузите изображение');
 		$('.popup').bPopup({
 			positionStyle : 'fixed',
 			easing : 'easeOutBack', //использую плагин jQuery easing plugin
-			speed : 550,
+			speed : 400,
 			transition : 'slideDown',
 			onClose : function () {
 				this.find('.form').trigger('reset');
@@ -31,7 +30,7 @@ var modulePopup = (function() {
 			value = $this.val(),
 			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
 			$('.form__input-fake')
-			.text(pureVal)
+			.val(pureVal)
 			.trigger('hideTooltip')
 			.removeClass('error');	
 	},
