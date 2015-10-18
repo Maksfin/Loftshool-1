@@ -15,6 +15,7 @@ var modulePopup = (function() {
 		e.preventDefault();
 		$('.form__input-fake').text('Загрузите изображение');
 		$('.popup').bPopup({
+			positionStyle : 'fixed',
 			easing : 'easeOutBack', //использую плагин jQuery easing plugin
 			speed : 550,
 			transition : 'slideDown',
@@ -23,14 +24,16 @@ var modulePopup = (function() {
 			}
 		})
 	},
-
 		//меняем путь к изображению
 	_changeNameImage = function() {
 		var	
 			$this = $(this),
 			value = $this.val(),
 			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
-			$('.form__input-fake').text(pureVal);	
+			$('.form__input-fake')
+			.text(pureVal)
+			.trigger('hideTooltip')
+			.removeClass('error');	
 	},
 
 	_addProject = function (e) {
@@ -42,7 +45,6 @@ var modulePopup = (function() {
 	},	
 
 	_ajaxForm = function (form, url) {
-			
 			if (!moduleValidation.validateForm(form)) return false;
 				// если поля заполнены делает запрос на сервер и возвращает ответ
 				

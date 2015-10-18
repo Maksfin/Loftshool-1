@@ -85,3 +85,15 @@
 .auth__form-submit:active{
   background: #3ba8c0;
 }
+.error {
+  background: #fdd5d2;
+  border: 1px solid #f97e76;
+}
+
+.qtip-mystyle {
+  background: #f97e76;
+  color: #fff;
+  font-family: fira_sansbook;
+  font-size: 0.8em;
+  border: 1px solid #f97e76;
+}

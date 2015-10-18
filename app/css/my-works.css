@@ -52,11 +52,11 @@
 	opacity: 0;
 	filter: alpha(opacity=0);
 	/*z-index: 1;*/
-	-webkit-transition: .9s;
-	-moz-transition: .9s;
-	-ms-transition: .9s;
-	-o-transition: .9s;
-	transition: .9s;
+	-webkit-transition: .6s;
+	-moz-transition: .6s;
+	-ms-transition: .6s;
+	-o-transition: .6s;
+	transition: .6s;
 }
 .galery__img-link{
 	display: inline-block;
@@ -192,7 +192,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10px;
+  left: 0px;
+  padding-left: 10px;
   right: 52px;
 }
 .form__input-file-icon {
@@ -249,5 +250,17 @@
   text-align: center;
   box-sizing:border-box;
   text-decoration: none;
+}
+.error {
+  background: #fdd5d2;
+  border: 1px solid #f97e76;
+}
+
+.qtip-mystyle {
+  background: #f97e76;
+  color: #fff;
+  font-family: fira_sansbook;
+  font-size: 0.8em;
+  border: 1px solid #f97e76;
 }
 
