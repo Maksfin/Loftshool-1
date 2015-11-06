@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Главаная страница</title>
+	<meta name="viewport" content="width=1000">
+	<title>Связаться со мной</title>
 	<!--SEO -->
 	<meta name="description" content="Loftschool первый выпусной проект">
 	<meta name="keywords" content="Loftschool, homework, выпускной проект №1">
@@ -60,7 +61,7 @@
  						<section>
  							<ul class="contacts">
  								<li class="contacts__item contacts__title">Контакты</li>
- 								<li class="contacts__item contacts__email"><a class="contacts__link" href="mailto:dyrnoj@bk.ru">dyrnoj@bk.ru</a></li>
+ 								<li class="contacts__item contacts__email"><a class="contacts__link" href="mailto:maks_roschin@bk.ru">maks_roschin@bk.ru</a></li>
  								<li class="contacts__item contacts__phone"><a class="contacts__link" href="tel:79611429537">+79611429537</a></li>
  								<li class="contacts__item contacts__skype"><a class="contacts__link" href="skype:maksfinn">maksfinn</a></li>
  							</ul>
@@ -69,7 +70,7 @@
  					<section class="about-me">
  						<h2 class="contact__title">У вас интеренсый проект? Напишите мне</h2>
  						<div class="contact__wrap clearfix">
- 							<form  class="form">
+ 							<form action="contact_me.php" method="post" class="form">
  								<div class="contact__input-wrap">
  									<span class="cotact__text">Имя</span>
  									<input type="text" name="name" qtip-position="left" qtip-content="Вы не ввели имя" placeholder="Как к вам обращаться" class="contact__input contact__input--area">
@@ -82,10 +83,9 @@
  									<span class="cotact__text">Сообщение</span>
  									<textarea name="textarea" qtip-content="Что вы от меня хотите?" placeholder="Кратко в чем суть" class="contact__input contact__input-textarea"></textarea>
  								</div>
+ 								<? echo $_SESSION['message']?>
  								<div class="contact__capcha">
- 									<span class="cotact__text">Введите код, указаный на картинке</span>
- 									<div class="contact__capcha-img">Здесь будет капча</div>
- 									<input type="text" name="captcha" qtip-position="right" qtip-content="Вы не ввели код" placeholder="Введите код" class="contact__input contact__input--capcha">
+									<div class="g-recaptcha" data-sitekey="6Le8Ew8TAAAAAHmWQx6KIcmO1O-_VksIx_4GEAp3"></div>
  								</div>
  								<input type="submit"  class="contact__button contact__button--submit" value="Отправить">
  								<input type="reset" class="contact__button contact__button--reset" value="Очистить">
@@ -107,6 +107,7 @@
  			<script src="bower/jquery/jquery.min.js"></script>
  			<script src="bower/qtip2/jquery.qtip.js"></script>
  			<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
+ 			<script src="https://www.google.com/recaptcha/api.js"></script>
  		 	<script src="js/validation.js"></script>
  			<script src="js/contact.js"></script>
  		</body>

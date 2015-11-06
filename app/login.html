@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Главаная страница</title>
+	<meta name="viewport" content="width=1000">
+	<title>Авторизация</title>
 	<!--SEO -->
 	<meta name="description" content="Loftschool первый выпусной проект">
 	<meta name="keywords" content="Loftschool, homework, выпускной проект №1">
@@ -15,8 +16,10 @@
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
+	<!-- build:css css/main.min.css --> 
  	<link rel="stylesheet" href="css/main.css"> 
  	<link rel="stylesheet" href="css/login.css">
+ 	<!-- endbuild -->
 	<!-- Modernizr -->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -62,10 +65,14 @@
 			</div>
 		</div>
 	</footer>
+	<!-- build:js js/_vendors.min.js -->
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
+	<!-- endbuild -->
+	<!-- build:js js/main.min.js --> 
 	<script src="js/validation.js"></script>
 	<script src="js/login.js"></script>
+	<!-- endbuild -->
 	</body>
 	</html>
